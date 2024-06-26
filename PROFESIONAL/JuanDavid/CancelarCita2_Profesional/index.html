@@ -4,19 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atencion Profesional</title>
-    <link rel="stylesheet" href="cancelar.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
-  <div class="header">
+  <nav class="navbar">
     <div class="logo">
-      <img src="logo.png" alt="Logo">
-      <div class="title">Atencion Profesional</div>
+      <img src="LogoTranquilidad.jpg" alt="Logo de Atención Profesional">
+      <span>Atención Profesional</span>
     </div>
-    <div class="specialist">Especialista: Diego Armando M.</div>
-  </div>
-
+    <div class="servicios">
+      <span id="servicios-button">Servicios</span>
+      <div class="submenu">
+        <ul>
+          <li>Biblioterapia</li>
+          <li>Arteterapia</li>
+          <li>Musicoterapia</li>
+          <li>Ejercicios</li>
+        </ul>
+      </div>
+    </div>
+    <div class="user-info">
+      <span>Juanito Alimaña</span>
+      <img class="imagen-usuario" src="FotoUsuario.png" alt="Foto de perfil del usuario">
+    </div>
+  </nav>
   <div class="form-container">
     <div class="form-left">
       <div class="form-label">Usuario:</div>
@@ -49,15 +61,28 @@
   <button class="form-button">Enviar</button>
 </div>
 
-<div class="footer">
+<footer class="footer">
   <div class="footer-links">
-    <div class="footer-link"><a href="#"><i class="footer-icon fas fa-phone-alt"></i></a></div>
-    <div class="footer-link"><a href="#"><i class="footer-icon fas fa-envelope"></i></a></div>
-    <div class="footer-link"><a href="#"><i class="footer-icon fab fa-facebook-f"></i></a></div>
-    <div class="footer-link"><a href="#"><i class="footer-icon fab fa-instagram"></i></a></div>
+      <div class="contactanos">
+          <span>Contactanos</span>
+          <img src="Whatsapp.png" alt="Whatsapp">
+          <img src="Telegram.png" alt="Telegram">
+        </div>
+      </div>
+    <div class="canales-atencion">
+      <span>Canales de atencion</span>
+      <img src="correo.png" alt="Correo">
+    </div>
+    <div class="social-media">
+      <span>Redes Sociales</span>
+      <img src="facebook.png" alt="Facebook">
+      <img src="instagram.png" alt="Instagram">
+    </div>
   </div>
-  <div>¿Quiénes somos?</div>
-</div>
+  <div class="texto-footer">
+    <span>¿Quienes somos? </span>
+  </div>
+</footer>
 
 </body>
 </html>
