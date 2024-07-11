@@ -23,7 +23,7 @@
                 <li>Ejercicios</li>
               </ul>
             </div>
-          </div>
+          </div> 
           <div class="user-info">
             <span>Juanito Alimaña</span>
             <img class="imagen-usuario" src="../Imagenes/FotoUsuario.png" alt="Foto de perfil del usuario">
@@ -31,13 +31,11 @@
         </nav>
       </header>
         <main>
-            <div class="grid">
-                <div class="grid-item">Archivos</div>
-                <div class="grid-item">Informes</div>
-                <div class="grid-item">Reseñas</div>
-                <div class="grid-item">Profesionales</div>
-                <div class="grid-item">Profesionales</div>
-                <div class="grid-item">Profesionales</div>
+            <div class="certificate-section">
+                <h2>Certificados del Profesional</h2>
+                <ul class="certificate-list" id="certificates">
+                    <!-- Lista de certificados -->
+                </ul>
             </div>
         </main>
         <footer class="footer">
@@ -68,5 +66,28 @@
               <span>¿Quienes somos? </span>
             </div>
           </footer>
+    </div>
+    <script>
+        // Función para simular la carga de certificados en la lista
+        function loadCertificates() {
+            const certificates = [
+                'Certificado de Psicología Clínica',
+                'Certificado de Terapia Cognitivo-Conductual',
+                'Certificado de Mindfulness y Meditación'
+            ];
+
+            const certificatesList = document.getElementById('certificates');
+
+            certificates.forEach(certificate => {
+                const li = document.createElement('li');
+                li.textContent = certificate;
+                certificatesList.appendChild(li);
+            });
+        }
+
+        // Llamar a la función para cargar los certificados cuando la página se carga
+        window.onload = loadCertificates;
+    </script>
 </body>
 </html>
+

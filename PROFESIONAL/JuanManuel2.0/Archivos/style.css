@@ -87,54 +87,70 @@ body {
   height: 30px;
 }
 
-.body {
-  padding: 20px;
-}
-
-.text h1 {
-  margin: 0;
-  color: #6a1b9a;
-}
-
-.text p {
-  margin: 0;
-  color: #999;
-}
-
 
 main {
+  flex: 1;
   padding: 20px;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 90px;
+.files-section h2 {
+  margin-top: 0;
 }
 
-.grid-item {
-  background-color: #e0e0e0;
-  color: #59009A;
-  width: 300px;
-  height: 200px;
-  padding: 20px;
-  text-align: center;
-  border-radius: 10px;
-  position: relative;
-  border: 2px solid #59009A;
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
-.grid-item::before {
-  content: '';
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  width: 100px;
-  height: 100px;
-  background-color: #b39ddb;
-  border-radius: 50%;
-  z-index: -1;
+.file-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+}
+
+.file-item:first-of-type {
+  border-top: none;
+}
+.imagen{
+  width: 70px;
+  height: 90px;
+}
+
+.file-icon img {
+  
+  margin-right: 10px;
+}
+
+.settings-icon  {
+  justify-content: flex-end;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+}
+.settings-icon img  {
+  justify-content: flex-end;
+  width: 70px;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+}
+
+.cargar {
+  display: block;
+    padding: 10px 30px 10px 30px;
+    background-color: #8A66FD;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 200px;
+  
 }
 
 .footer {
@@ -180,3 +196,8 @@ main {
   text-align: right;
   align-items: center;
 }
+
+
+
+
+  

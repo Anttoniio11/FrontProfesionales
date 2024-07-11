@@ -1,0 +1,213 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+  }
+  
+  .navbar {
+    background-color: #fff;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 65px;
+    height: 60px;
+    margin-right: 10px;
+  }
+  
+  .navbar span {
+    color: #59009A;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  
+  .servicios {
+    position: relative;
+  }
+  
+  .submenu {
+    position: absolute;
+    background-color: #fff;
+    padding: 5px 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    top: 40px;
+    left: 0;
+    width: auto;
+  }
+  
+  .servicios:hover .submenu {
+    display: block;
+  }
+  
+  .submenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .submenu li {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .submenu li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+
+  .imagen-usuario{
+    width: 30px;
+    height: 30px;
+  }
+  
+  .body {
+    padding: 20px;
+  }
+  
+  .footer {
+    background-color: #59009A;
+    color: #fff;
+    padding: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contactamos,
+  .canales-atencion,
+  .social-media {
+    display: flex;
+    align-items: center;
+    margin-right: 1px;
+  }
+  
+  .contactanos span,
+  .canales-atencion span,
+  .social-media span {
+    margin-right: 10px;
+  }
+  
+  .texto-footer {
+    text-align: right;
+  }
+
+h1 {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+    font-size: 1.5em;
+    color: #6a1b9a;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info span {
+    margin-right: 10px;
+}
+
+.user-info img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.appointments {
+    width: 30%;
+}
+
+.appointment {
+    border: 1px solid #6a1b9a;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.calendar {
+    width: 50%;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.calendar-header button {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: #6a1b9a;
+}
+
+.calendar table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar th, .calendar td {
+    width: 14.28%;
+    text-align: center;
+    padding: 5px;
+}
+
+.calendar th {
+    background-color: #f0f0f0;
+}
+
+.calendar td {
+    border: 1px solid #ddd;
+}
+
+.accept-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
