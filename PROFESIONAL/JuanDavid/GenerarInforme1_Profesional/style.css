@@ -9,28 +9,122 @@
     background-color: #f2f2f2;
   }
   
-  .container {
-    width: 80%;
-    margin: 20px auto; /* Añadimos un poco de margen arriba y abajo para centrar */
-    padding: 20px;
-    border: 2px solid purple; /* Agregamos un borde morado alrededor del contenido */
-    border-radius: 10px; /* Agregamos bordes redondeados */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
   
-  .header {
-    text-align: center;
-    margin-bottom: 20px;
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
   }
   
-  .header h1 {
-    font-size: 24px;
+  .navbar {
+    background-color: #fff;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 65px;
+    height: 60px;
+    margin-right: 10px;
+  }
+  
+  .navbar span {
+    color: #59009A;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-right: 20px;
   }
   
-  .header p {
-    font-size: 16px;
-    color: #666;
+  .servicios {
+    position: relative;
+  }
+  
+  .submenu {
+    position: absolute;
+    background-color: #fff;
+    padding: 5px 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    top: 40px;
+    left: 0;
+    width: auto;
+  }
+  
+  .servicios:hover .submenu {
+    display: block;
+  }
+  
+  .submenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .submenu li {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .submenu li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+
+  .imagen-usuario{
+    width: 30px;
+    height: 30px;
+  }
+  
+  .body {
+    padding: 20px;
+  }
+  
+  .footer {
+    background-color: #59009A;
+    color: #fff;
+    padding: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contactamos,
+  .canales-atencion,
+  .social-media {
+    display: flex;
+    align-items: center;
+    margin-right: 1px;
+  }
+  
+  .contactanos span,
+  .canales-atencion span,
+  .social-media span {
+    margin-right: 10px;
+  }
+  
+  .texto-footer {
+    text-align: right;
   }
   
   .formulario {
@@ -73,19 +167,4 @@
     cursor: pointer;
   }
   
-  .footer {
-    background-color: #6a1b9a;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    border-bottom-left-radius: 10px; /* Añadimos bordes redondeados al pie de página */
-    border-bottom-right-radius: 10px;
-  }
   
-  .footer p {
-    margin-bottom: 10px;
-  }
-  
-  .footer p:last-child {
-    margin-bottom: 0;
-  }

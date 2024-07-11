@@ -4,21 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atencion Profesional</title>
-    <link rel="stylesheet" href="citaspr.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <header>
+        <nav class="navbar">
             <div class="logo">
-                <img src="path-to-logo-image" alt="Logo">
+              <img src="LogoTranquilidad.jpg" alt="Logo de Atención Profesional">
+              <span>Atención Profesional</span>
             </div>
-            <h1>Atencion Profesional</h1>
+            <div class="servicios">
+              <span id="servicios-button">Servicios</span>
+              <div class="submenu">
+                <ul>
+                  <li>Biblioterapia</li>
+                  <li>Arteterapia</li>
+                  <li>Musicoterapia</li>
+                  <li>Ejercicios</li>
+                </ul>
+              </div>
+            </div>
             <div class="user-info">
-                <span>Especialista</span>
-                <span>Diego Armando M.</span>
-                <img src="path-to-user-icon" alt="User Icon">
+              <span>Juanito Alimaña</span>
+              <img class="imagen-usuario" src="FotoUsuario.png" alt="Foto de perfil del usuario">
             </div>
-        </header>
+          </nav>
         <main>
             <section class="appointments">
                 <div class="appointment">
@@ -62,9 +72,28 @@
                 </div>
             </section>
         </main>
-        <footer>
-            <div class="footer-text">¿Quiénes somos?</div>
-        </footer>
+        <footer class="footer">
+            <div class="footer-links">
+                <div class="contactanos">
+                    <span>Contactanos</span>
+                    <img src="Whatsapp.png" alt="Whatsapp">
+                    <img src="Telegram.png" alt="Telegram">
+                  </div>
+                </div>
+              <div class="canales-atencion">
+                <span>Canales de atencion</span>
+                <img src="correo.png" alt="Correo">
+              </div>
+              <div class="social-media">
+                <span>Redes Sociales</span>
+                <img src="facebook.png" alt="Facebook">
+                <img src="instagram.png" alt="Instagram">
+              </div>
+            </div>
+            <div class="texto-footer">
+              <span>¿Quienes somos? </span>
+            </div>
+          </footer>
     </div>
 </body>
 </html>

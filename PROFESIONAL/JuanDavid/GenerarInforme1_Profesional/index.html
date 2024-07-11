@@ -4,14 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Informe de Consulta Psicológica</title>
-  <link rel="stylesheet" href="informe.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <h1>Atención Profesional</h1>
-      <p>Especialista: Diego Armando M.</p>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="LogoTranquilidad.jpg" alt="Logo de Atención Profesional">
+      <span>Atención Profesional</span>
     </div>
+    <div class="servicios">
+      <span id="servicios-button">Servicios</span>
+      <div class="submenu">
+        <ul>
+          <li>Biblioterapia</li>
+          <li>Arteterapia</li>
+          <li>Musicoterapia</li>
+          <li>Ejercicios</li>
+        </ul>
+      </div>
+    </div>
+    <div class="user-info">
+      <span>Juanito Alimaña</span>
+      <img class="imagen-usuario" src="FotoUsuario.png" alt="Foto de perfil del usuario">
+    </div>
+  </nav>
     <form class="formulario">
       <h2>Datos Generales</h2>
       <label for="nombres">Apellidos y Nombres:</label>
@@ -34,19 +50,32 @@
       <textarea id="tecnicas_pruebas" name="tecnicas_pruebas"></textarea>
       <button type="button" onclick="siguientePaso()">Siguiente</button>
     </form>
-    <div class="footer">
-      <div class="contacto">
-        <p>Contactanos</p>
-        <p>Canales de Atención</p>
-        <p>Redes Sociales</p>
+    <footer class="footer">
+      <div class="footer-links">
+          <div class="contactanos">
+              <span>Contactanos</span>
+              <img src="Whatsapp.png" alt="Whatsapp">
+              <img src="Telegram.png" alt="Telegram">
+            </div>
+          </div>
+        <div class="canales-atencion">
+          <span>Canales de atencion</span>
+          <img src="correo.png" alt="Correo">
+        </div>
+        <div class="social-media">
+          <span>Redes Sociales</span>
+          <img src="facebook.png" alt="Facebook">
+          <img src="instagram.png" alt="Instagram">
+        </div>
       </div>
-      <p>¿Quiénes somos?</p>
-    </div>
+      <div class="texto-footer">
+        <span>¿Quienes somos? </span>
+      </div>
+    </footer>
   </div>
   <script>
     function siguientePaso() {
-      // Aquí podrías agregar el código para procesar los datos del formulario y pasar al siguiente paso del informe.
-      // Por ejemplo, podrías enviar los datos a un servidor para su procesamiento.
+      
       console.log("Siguiente paso...");
     }
   </script>

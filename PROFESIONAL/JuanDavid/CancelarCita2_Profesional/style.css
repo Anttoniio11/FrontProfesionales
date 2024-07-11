@@ -3,20 +3,24 @@ body {
     font-family: sans-serif;
   }
   
-  .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
   
-  .header {
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+  }
+  
+  .navbar {
+    background-color: #fff;
+    padding: 1em;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
   }
   
   .logo {
@@ -25,19 +29,96 @@ body {
   }
   
   .logo img {
-    width: 50px;
-    height: 50px;
+    width: 65px;
+    height: 60px;
     margin-right: 10px;
   }
   
-  .title {
-    font-size: 24px;
+  .navbar span {
+    color: #59009A;
     font-weight: bold;
+    margin-right: 20px;
   }
   
-  .specialist {
-    font-size: 16px;
-    color: #666;
+  .servicios {
+    position: relative;
+  }
+  
+  .submenu {
+    position: absolute;
+    background-color: #fff;
+    padding: 5px 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    top: 40px;
+    left: 0;
+    width: auto;
+  }
+  
+  .servicios:hover .submenu {
+    display: block;
+  }
+  
+  .submenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .submenu li {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .submenu li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+
+  .imagen-usuario{
+    width: 30px;
+    height: 30px;
+  }
+  
+  .body {
+    padding: 20px;
+  }
+  
+  .footer {
+    background-color: #59009A;
+    color: #fff;
+    padding: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contactamos,
+  .canales-atencion,
+  .social-media {
+    display: flex;
+    align-items: center;
+    margin-right: 1px;
+  }
+  
+  .contactanos span,
+  .canales-atencion span,
+  .social-media span {
+    margin-right: 10px;
+  }
+  
+  .texto-footer {
+    text-align: right;
   }
   
   .form-container {
@@ -76,33 +157,3 @@ body {
     cursor: pointer;
   }
   
-  .footer {
-    background-color: #6a1b9a;
-    color: #fff;
-    padding: 20px;
-    margin-top: 20px;
-    text-align: center;
-  }
-  
-  .footer-links {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  
-  .footer-link {
-    margin: 0 10px;
-  }
-  
-  .footer-link a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .footer-link a:hover {
-    text-decoration: underline;
-  }
-  
-  .footer-icon {
-    font-size: 24px;
-  }
