@@ -137,6 +137,10 @@ main {
   z-index: -1;
 }
 
+.grid-item:hover{
+  transform: scale(1.2);
+}
+
 .footer {
   background-color: #59009A;
   color: #fff;

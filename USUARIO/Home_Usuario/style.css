@@ -8,6 +8,7 @@
   body {
     font-family: 'Roboto', sans-serif;
     background-color: #fff;
+    height: calc(100vh - 100px);
   }
   
   .navbar {
@@ -143,33 +144,36 @@
 }
 
 .carrusel {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .cuadro {
-    margin: 0 10px;
-    text-align: center;
-    transition: transform 0.3s;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 250px;
+  height: 250px;
+  margin: 75px 0px 75px 0px;
 }
 
 .cuadro img {
-    width: 100px;
-    height: 100px;
-    transition: transform 0.3s;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
 }
 
-.cuadro p {
+.cuadro h3 {
     margin-top: 5px;
     color: #59009A;
 }
 
 .cuadro:hover {
-    transform: scale(1.1);
-}
-
-.cuadro:hover img {
     transform: scale(1.2);
 }
 
