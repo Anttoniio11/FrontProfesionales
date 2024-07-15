@@ -1,21 +1,21 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5;
-}
-
-
-
+/* Barra de navegacion y footer*/
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
 }
 
 .navbar {
@@ -24,6 +24,11 @@ body {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ddd;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .logo {
@@ -37,36 +42,48 @@ body {
   margin: 0px 25px 0px 10px;
 }
 
-.logo span{
-  font-size: 20px;
+.logo span {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #59009A;
+  font-style: italic;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 .navbar span {
   color: #59009A;
-  font-weight: bold;
   margin-right: 20px;
 }
 
 .servicios {
   position: relative;
   margin-left: auto;
-  font-size: 18px;
+  font-size: 17px;
+  text-align: center;
+  cursor: pointer;
 }
 
 .submenu {
   position: absolute;
   background-color: #fff;
-  padding: 5px 5px;
+  padding: 10px 0;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   display: none;
-  top: 22px;
-  left: 0;
-  width: auto;
+  top: 100%; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  z-index: 1000;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .servicios:hover .submenu {
   display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
 .submenu ul {
@@ -76,8 +93,10 @@ body {
 }
 
 .submenu li {
-  padding: 20px;
+  padding: 15px 30px;
   border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
 .submenu li:hover {
@@ -87,34 +106,69 @@ body {
 .user-info {
   display: flex;
   align-items: center;
-  margin-left: 15px;
-  font-size: 18pxpx;
+  margin: 0px;
+  font-size: 17px;
 }
 
-.imagen-usuario{
-  width: 30px;
-  height: 30px;
+.imagen-usuario {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
-.logo h1 {
-  margin: 0;
-  font-size: 24px;
-  color:  #59009A;
+.body {
+  padding: 80px 20px 20px 20px;
+  flex: 1;
 }
 
-.especialista {
+.footer {
+  background-color: #59009A;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  margin-top: auto;
+}
+
+.footer-links {
   display: flex;
   align-items: center;
 }
 
-.especialista span {
-  margin-right: 10px;
-  color: #000;
+.contactanos,
+.canales-atencion,
+.social-media {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 0px; /* Espacio entre las secciones */
+  margin-left: 0px; /* Ajuste para acercar a la izquierda */
 }
 
-.profile-icon img {
-  height: 40px;
-  border-radius: 50%;
+.contactanos span,
+.canales-atencion span,
+.social-media span {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.imagenes-container {
+  display: flex;
+  align-items: center;
+}
+
+.imagen-footer {
+  margin-right: 10px;
+}
+ 
+.texto-footer {
+  text-align: right;
+  align-items: center;
+  transform: translate(0%, 30%);
 }
 
 main {
@@ -171,50 +225,6 @@ main {
   margin: 0;
   font-size: 14px;
   color: #333;
-}
-
-.footer {
-  background-color: #59009A;
-  color: #fff;
-  padding: 35px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-links {
-  display: flex;
-  align-items: center;
-}
-
-.contactamos,
-.canales-atencion,
-.social-media {
-  display: flex;
-  align-items: center;
-  margin-right: 1px;
-  flex-direction: column;
-}
-
-.contactanos span,
-.canales-atencion span,
-.social-media span {
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-
-.imagenes-container {
-  display: flex;
-  align-items: center;
-}
-
-.imagen-footer{
-  margin-right: 10px;
-}
-
-.texto-footer {
-  text-align: right;
-  align-items: center;
 }
 
 button {
