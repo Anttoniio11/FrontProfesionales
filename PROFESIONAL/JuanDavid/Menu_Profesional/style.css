@@ -1,9 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 * {
@@ -17,66 +19,97 @@ body {
     background-color: #fff;
   }
   
-  .navbar {
-    background-color: #fff;
-    padding: 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo img {
-    width: 65px;
-    height: 60px;
-    margin-right: 10px;
-  }
-  
-  .navbar span {
+  h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #59009A;
-    font-weight: bold;
-    margin-right: 20px;
+    font-style: italic;
   }
   
-  .servicios {
+ 
+  
+  body {
+    font-family: sans-serif;
+    margin: 0;
+    position: absolute;
+    padding: 0;
+    background-color: #fffcfc;
+    width: 100%;
+    left: 0%;
+  }
+  
+  .arriba {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      border-bottom: 1px solid #333;
+  }
+  .logo {
+      display: flex;
+      align-items: center;
+  }
+  .logo img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+  }
+  .logo h1 {
+      margin: 0;
+  }
+  .user {
+      display: flex;
+      align-items: center;
+      margin: 0px;
+  }
+  .user a {
+      margin-right: 20px;
+      color: #59009A;
+      text-decoration: none;
+    
+      margin-inline-start: auto;
+  }
+  .user img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+  }
+  .nav {
+    color: #59009A;
     position: relative;
-  }
-  
-  .submenu {
+    margin-left: 880px;
+    
+    }
+    
+    .submenu {
     position: absolute;
     background-color: #fff;
     padding: 5px 5px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     display: none;
-    top: 40px;
-    left: 0;
+    top: 24px;
+    left: 0px;
     width: auto;
-  }
-  
-  .servicios:hover .submenu {
-    display: block;
-  }
-  
-  .submenu ul {
+    }
+    
+    .nav:hover .submenu {
+    display: flex;
+    }
+    
+    .submenu ul {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  
-  .submenu li {
+    }
+    
+    .submenu li {
     padding: 20px;
     border-bottom: 1px solid #ddd;
-  }
-  
-  .submenu li:hover {
+    }
+    
+    .submenu li:hover {
     background-color: #f0f0f0;
-  }
+    }
   
   .user-info {
     display: flex;
@@ -87,42 +120,60 @@ body {
     width: 30px;
     height: 30px;
   }
-  
   .body {
     padding: 20px;
   }
   
-  .footer {
+  footer {
     background-color: #59009A;
-    color: #fff;
-    padding: 35px;
+    color: #ffffff;
+    padding: 10px;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
     display: flex;
+    padding: 0;
     justify-content: space-between;
-    align-items: center;
-  }
-  
-  .footer-links {
+    align-items: flex-start;
+    width: 100%;
+}
+
+.contact-item {
     display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
     align-items: center;
-  }
-  
-  .contactamos,
-  .canales-atencion,
-  .social-media {
+    text-align: center;
+}
+
+.contact-item span {
+    margin-bottom: 5px;
+}
+
+.iconos {
     display: flex;
-    align-items: center;
-    margin-right: 1px;
-  }
-  
-  .contactanos span,
-  .canales-atencion span,
-  .social-media span {
-    margin-right: 10px;
-  }
-  
-  .texto-footer {
-    text-align: right;
-  }
+    justify-content: center;
+}
+
+.iconos a {
+    margin: 0 10px;
+}
+
+.iconos img {
+    width: 24px;
+    height: 24px;
+}
+
+.quienes-somos {
+    align-self: center;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: auto;
+}
 
 main {
     display: flex;
@@ -134,7 +185,9 @@ main {
 
 .welcome-message h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    color: #59009A;
+    font-style: italic;
 }
 
 .options {
@@ -152,8 +205,8 @@ main {
 }
 
 .option img {
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 300px;
     margin-bottom: 10px;
 }
 
