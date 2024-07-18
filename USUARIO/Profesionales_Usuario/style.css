@@ -163,6 +163,7 @@ body {
 
 .imagen-footer {
   margin-right: 10px;
+  width: 28px;
 }
  
 .texto-footer {
@@ -217,6 +218,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-top: 30px;
 }
 
 .profile {

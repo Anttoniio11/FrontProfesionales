@@ -163,13 +163,15 @@ body {
 
 .imagen-footer {
   margin-right: 10px;
+  width: 28px;
 }
-
+ 
 .texto-footer {
   text-align: right;
   align-items: center;
   transform: translate(0%, 30%);
 }
+
 
 /* Contenido body */
 

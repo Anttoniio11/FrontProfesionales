@@ -107,7 +107,7 @@ body {
   display: flex;
   align-items: center;
   margin: 0px;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .imagen-usuario {
@@ -163,6 +163,7 @@ body {
 
 .imagen-footer {
   margin-right: 10px;
+  width: 28px;
 }
  
 .texto-footer {
@@ -238,20 +239,19 @@ body {
 
 .flecha {
   position: fixed;
-  bottom: 20px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
   background-color: #59009A;
-  padding: 10px;
+  padding: 5px;
   border-radius: 50%;
-  pointer-events: none;
+  opacity: 0.5;
 }
 
 .flecha img {
   width: 40px;
 }
-
 
 .section {
   display: flex;
@@ -262,7 +262,7 @@ body {
 }
 
 .purple-section {
-  background-color: #59009A;
+  background-image: url(../Imagenes/ImportanteConsultar.png);
   flex: 1;
   height: 100%;
   display: flex;
@@ -273,7 +273,7 @@ body {
 }
 
 .purple-section h2 {
-  color: #fff;
+  color: #59009A;
   font-size: 28px;
   text-align: center;
   margin-bottom: 10px;
@@ -293,13 +293,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 80px;
+  border: 1px solid rgb(201, 201, 201);
 }
 
 .white-section p{
   font-size: 20px;
   text-align: center;
-  line-height: 1.2;
+  line-height: 1.8;
+  margin-left: 80px; 
+  margin-right: 40px;
 }
 
 .section2 {
@@ -311,7 +313,8 @@ body {
 }
 
 .purple-section2 {
-  background-color: #59009A;
+  background-image: url(../Imagenes/BienestarEmo.png);
+  opacity: 100;
   flex: 1;
   height: 100%;
   display: flex;
@@ -322,7 +325,7 @@ body {
 }
 
 .purple-section2 h2 {
-  color: #fff;
+  color: #59009A;
   font-size: 28px;
   text-align: center;
   margin-bottom: 10px;
@@ -333,6 +336,7 @@ body {
   font-size: 18px;
   text-align: justify;
   max-width: 600px;
+  
 }
 
 .white-section2 {
@@ -342,13 +346,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 80px;
+  border: 1px solid rgb(201, 201, 201);
 }
 
 .white-section2 p{
   font-size: 20px;
   text-align: center;
-  line-height: 1.4;
+  line-height: 1.8;
+  margin-left: 80px; 
+  margin-right: 50px;
+}
+
+.img-abajo{
+  width: 80%;
+  height: 80%;
 }
 
 

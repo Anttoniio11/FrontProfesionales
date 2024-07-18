@@ -121,10 +121,63 @@ body {
   flex: 1;
 }
 
+/* Footer */
+.footer {
+  background-color: #59009A;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  margin-top: auto;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+
+.contactanos,
+.canales-atencion,
+.social-media {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 0px; /* Espacio entre las secciones */
+  margin-left: 0px; /* Ajuste para acercar a la izquierda */
+}
+
+.contactanos span,
+.canales-atencion span,
+.social-media span {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.imagenes-container {
+  display: flex;
+  align-items: center;
+}
+
+.imagen-footer {
+  margin-right: 10px;
+  width: 28px;
+}
+ 
+.texto-footer {
+  text-align: right;
+  align-items: center;
+  transform: translate(0%, 30%);
+}
+
+
 /* Contenido del body */
 
 main{
-  margin-top: 100px;
+  margin-top: 90px;
 }
 
 .body-content {
@@ -168,37 +221,6 @@ main{
   transform: scale(1.1);
 }
 
-/* Footer */
-.footer {
-  background-color: #59009A;
-  color: #fff;
-  padding: 35px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.footer-links {
-  display: flex;
-  align-items: center;
-}
-
-.footer-links > div {
-  margin-right: 20px;
-}
-
-.footer-links img {
-  width: 25px;
-  height: 25px;
-  margin-left: 10px;
-}
-
-.texto-footer {
-  text-align: right;
-  flex-grow: 1;
-}
-
 /* Estilos básicos para la animación de fondo */
 .background-animation {
   position: fixed;
@@ -206,7 +228,7 @@ main{
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* Asegurar que esté detrás del contenido principal */
+  z-index: -1;
 }
 
 .ball {

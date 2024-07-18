@@ -145,8 +145,8 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-right: 0px; /* Espacio entre las secciones */
-  margin-left: 0px; /* Ajuste para acercar a la izquierda */
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 .contactanos span,
@@ -163,6 +163,7 @@ body {
 
 .imagen-footer {
   margin-right: 10px;
+  width: 28px;
 }
 
 .texto-footer {
