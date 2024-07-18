@@ -173,12 +173,13 @@ body {
 
 /* contenido body */
 
+
 .table-container {
   width: 100%;
   overflow-x: auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: #fff;
-  padding: 100px;
+  padding: 80px;
   border-radius: 10px;
 }
 

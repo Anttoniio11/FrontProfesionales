@@ -174,20 +174,43 @@ body {
 main {
   padding: 20px;
   height: calc(100vh - 100px);
+  margin-top: 100px;
 }
 
-.search-section {
+.search-container {
   display: flex;
-  justify-content: center;
-  margin: 30px;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
-.search-section input {
-  width: 80%;
+.search-bar {
+  flex: 1;
   padding: 10px;
   font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 2px solid #59009A;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.search-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #59009A;
+  color: #fff;
+  border: 2px solid #59009A;
+  border-left: none; /* Eliminar el borde izquierdo del botón */
+  border-radius: 0 5px 5px 0; /* Bordes redondeados, solo para la derecha */
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #7a3ec8;
 }
 
 .profile-list {
