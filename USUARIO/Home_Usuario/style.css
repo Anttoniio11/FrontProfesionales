@@ -107,7 +107,7 @@ body {
   display: flex;
   align-items: center;
   margin: 0px;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .imagen-usuario {
@@ -172,24 +172,61 @@ body {
   transform: translate(0%, 30%);
 }
 
-
-
   /* Contenido del body*/
 
-  body {
+body {
     font-family: Arial, sans-serif;
 }
 
 .body{
-  padding: 120px;
+  padding: 50px;
 }
+
+
+.carousel {
+  width: 100%;
+  max-height: 420px; /* Controla la altura máxima del carrusel */
+  overflow: hidden; /* Asegura que el contenido fuera del carrusel no sea visible */
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 100%; /* Usa la altura completa del contenedor del carrusel */
+}
+
+.carousel-item img {
+  width: 100%; /* Asegura que la imagen ocupa todo el ancho del contenedor */
+  height: 100%; /* Asegura que la imagen ocupa toda la altura del contenedor */
+  object-fit: cover; /* Cubre el contenedor manteniendo la proporción, puede cortar parte de la imagen si es necesario */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro para mejor visibilidad */
+}
+
+.carousel-indicators li {
+  background-color: #000; /* Color de los indicadores */
+}
+
+.carousel-indicators .active {
+  background-color: #fff; /* Color del indicador activo */
+}
+
+
+
 .frases {
     text-align: center;
 }
 
 .frases p {
     font-size: 20px;
-    margin: 0;
+    margin-top: 30px;
     padding: 20px;
     color: #59009A;
 }
@@ -201,7 +238,7 @@ body {
     cursor: pointer;
 }
 
-.carrusel {
+.cards {
   display: flex;
   gap: 20px;
   justify-content: center;
@@ -361,11 +398,3 @@ body {
   width: 80%;
   height: 80%;
 }
-
-
-
-
-
-
-
-  
