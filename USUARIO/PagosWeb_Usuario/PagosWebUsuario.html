@@ -32,28 +32,33 @@
             </nav>
         </header>
 
-  <main class="body">
+        <main class="body">
+            <div class="formulario">
+                <h1>Pago Seguro</h1>
+                <form>
+                    <div class="input-group">
+                        <input type="text" class="casilla" placeholder="Numero de tarjeta" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" class="casilla" placeholder="Nombre del titulas" required>
+                    </div>
+                    <div>
+                    <input type="text" class="casilla2" placeholder="Fecha de Expiración (MM/AA)" required>
+                    <input type="text" class="casilla2" placeholder="Codigo de seguridad" required>
+                    </div>
 
-    <body>
-      <div class="formulario">
-          <h1>PAGOS WEB</h1> <br><br>
-          
-        <input type="text" class="casilla" placeholder="Nombres">
-        <input type="text" class="casilla" placeholder="Apellidos">
-        <input type="text" class="casilla" placeholder="Correo Electronico">
-        <input type="email" class="casilla" placeholder="Numero de tarjeta">
+                    <div class="recordar-tarjeta">
+                        <input type="checkbox" id="remember-card">
+                        <label for="remember-card"> Recordar tarjeta</label>
+                    </div>
+    
+                    <a href="../Home_Usuario/HomeUsuario.html"><button type="" class="pagar-button">Pagar</button></a>
+                </form>
+            </div>
+    
+         
+        </main>
 
-        <div class="recordar-tarjeta">
-            <input type="checkbox" id="remember-card">
-            <label for="remember-card"> Recordar tarjeta</label>
-        </div>
-
-        <a href="../Home_Usuario/HomeUsuario.html"><button type="submit" class="pagar-button">Pagar</button></a>
-          
-      </div>
-  </body>
-
-  </main>
   <footer class="footer">
     <div class="footer-links">
         <div class="contactanos">

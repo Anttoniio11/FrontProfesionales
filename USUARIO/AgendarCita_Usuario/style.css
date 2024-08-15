@@ -213,16 +213,6 @@ select.opciones {
   box-shadow: 1px 10px 20px 0.5px rgb(145, 145, 145);
 }
 
-.enviar {
-  height: 40px;
-  width: 90px;
-  background: #59009A;
-  color: #ffffff;
-  margin-top: 250px;
-  border-radius: 50px;
-  font-size: 15px;
-}
-
 :root {
   --c-theme-primary: #8A66FD;
   --c-theme-primary-accent: #CBE8FF;
@@ -244,6 +234,10 @@ select.opciones {
   margin-bottom: 2rem;
 }
 
+.month-selector{
+  text-align: center;
+}
+
 .month-name {
   font-size: 24px;
   font-weight: bold;
@@ -253,6 +247,46 @@ select.opciones {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-row-gap: rem;
+}
+
+.horarios {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-right: 100px;
+}
+
+.horarios .date {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.horarios .date:hover {
+  background-color: #e0e0e0;
+}
+
+.horarios .date.selected {
+  background-color: #4CAF50;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.enviar {
+  height: 40px;
+  width: 90px;
+  background: #59009A;
+  color: #ffffff;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  font-size: 15px;
 }
 
 .day, .date {
@@ -305,7 +339,7 @@ select.opciones {
 .historial {
   display: flex;
   flex-direction: column;
-  margin-top: 120px;
+  margin-top: 100px;
   align-items: center;
 }
 
