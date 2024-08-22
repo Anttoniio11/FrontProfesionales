@@ -2,8 +2,8 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   margin: 0;
-  min-height: 150vh;
-  max-height: 150vh;
+  min-height: 100vh;
+  
   display: flex;
   flex-direction: column;
   position: relative;
@@ -20,8 +20,8 @@ body {
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    min-height: 120vh;
-  max-height: 120vh;
+    min-height: 100vh;
+  
     margin: 0;
     
   }
@@ -134,7 +134,7 @@ body {
     background-color: #59009A;
     color: #ffffff;
     padding: 10px;
-    position:absolute;
+    
     bottom: 0;
     width: 100%;
 }
@@ -213,14 +213,16 @@ main {
 
 .appointment-requests {
     width: 60%;
+    
 }
 
 .appointment-request {
     border: 1px solid #6a1b9a;
     padding: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 50px;
     border-radius: 5px;
     background-color: #f9f9f9;
+    
 }
 
 .appointment-request p {

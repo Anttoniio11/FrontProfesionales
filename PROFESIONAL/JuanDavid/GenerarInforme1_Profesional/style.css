@@ -196,7 +196,7 @@
     height: 100px; /* Altura fija para el textarea */
   }
   
-  .formulario button {
+  button {
     float: right; /* Colocamos el botón a la derecha */
     background-color: #59009A;
     color: white;

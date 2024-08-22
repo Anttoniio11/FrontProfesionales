@@ -1,18 +1,13 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    min-height: 115vh;
-    display: flex;
-    max-height: 115vh;
-    flex-direction: column;
-    position: relative;
-    padding: 50px;
-    
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  
+    min-height: 100vh;
   }
-  html, body {
-    height: 160%;
-  }
+  
   
   * {
     box-sizing: border-box  ;
@@ -136,9 +131,9 @@ body {
   
   .schedule-container {
     background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    margin-top: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -146,14 +141,14 @@ body {
   
   .schedule {
     border-bottom: 1px solid #59009A ;
-    padding: 15px ;
+    padding: 1em ;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     border: 1px solid #59009A;
-    border-radius: 5px;
-
+    border-radius: 10px;
+    
   }
   
   .schedule-info {
@@ -172,7 +167,7 @@ body {
   }
   
   .schedule-info .details span {
-    margin-bottom: 5px;
+    margin-bottom: 25px;
   }
   
   .schedule-info .cancel {
@@ -189,10 +184,11 @@ body {
   footer {
     background-color: #59009A;
     color: #ffffff;
-    padding: 10px;
-    position:absolute;
+    padding: 1em 0;
+    
     bottom: 0;
     width: 100%;
+    margin-top: auto;
 }
 
 .footer-container {

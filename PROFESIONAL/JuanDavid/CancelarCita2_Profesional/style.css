@@ -1,8 +1,9 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
+  font-size: larger;
   margin: 0;
-  min-height: 100vh;
+  min-height: 120vh;
   display: flex;
   flex-direction: column;
 }
@@ -15,6 +16,7 @@ body {
   
   body {
     font-family: 'Roboto', sans-serif;
+    font-size: larger;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -130,11 +132,81 @@ body {
     padding: 20px;
   }
   
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+    padding: 20px;
+  }
+  
+  .form-container {
+    display: flex;
+    justify-content: space-between; /* Asegura que las secciones estén bien distribuidas */
+    width: 100%;
+    max-width: 1200px; /* Tamaño máximo del contenedor */
+    margin: 20px 0; /* Margen superior e inferior */
+    gap: 40px; /* Espacio entre secciones */
+  }
+  
+  .form-section {
+    flex: 1;
+  }
+  
+  .form-group {
+    margin-bottom: 20px; /* Espacio entre campos */
+  }
+  
+  .form-label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px; /* Espacio entre la etiqueta y el campo */
+    color: #333;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px; /* Tamaño del campo de entrada */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  textarea.form-input {
+    resize: vertical;
+    height: 120px; /* Tamaño del área de texto */
+  }
+  
+  .form-button {
+    background-color: rgba(167, 26, 26, 0.993);
+    color: #fff;
+    padding: 10px 20px; /* Tamaño del botón */
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-button:hover {
+    background-color: #7a1ab1;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: flex-end; /* Alinea el botón a la derecha */
+    width: 100%;
+    max-width: 1200px; /* Tamaño máximo del contenedor */
+    padding: 0 20px;
+  }
+  
   footer {
     background-color: #59009A;
     color: #ffffff;
     padding: 10px;
-    position:absolute;
+    
     bottom: 0;
     width: 100%;
 }
@@ -180,46 +252,3 @@ body {
     text-decoration: none;
     margin-left: auto;
 }
-  
-  .form-container {
-    display: flex;
-  }
-  
-  .form-left {
-    width: 50%;
-    padding: 20px;
-  }
-  
-  .form-right {
-    width: 50%;
-    padding: 20px;
-  }
-  
-  .form-label {
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  .form-input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    margin-bottom: 10px;
-  }
-  
-  .form-button {
-    background-color: #59009A;
-    color: #fff;
-    padding: 10px 30px 10px 30px;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    width: 100px;
-    height: 50px;
-    margin-left: auto;
-    margin-right: 20px;
-    
-    
-  }
-  
